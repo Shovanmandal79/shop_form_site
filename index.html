@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>দোকান হিসাব ফর্ম</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>দোকান হিসাব ফর্ম</h2>
+    <form id="shopForm">
+        <label>তারিখ: <input type="date" name="date" required></label><br>
+        <label>দোকানের নাম:
+            <select name="shop">
+                <option value="দোকান A">দোকান A</option>
+                <option value="দোকান B">দোকান B</option>
+                <option value="দোকান C">দোকান C</option>
+            </select>
+        </label><br>
+        <label>ঠিকানা:
+            <select name="address">
+                <option value="ঢাকা">ঢাকা</option>
+                <option value="বরিশাল">বরিশাল</option>
+                <option value="খুলনা">খুলনা</option>
+            </select>
+        </label><br>
+        <label>মেমো নম্বর: <input type="text" name="memo" required></label><br>
+        <label>মোট টাকা: <input type="number" name="total" required></label><br>
+        <label>জমা: <input type="number" name="paid" required></label><br>
+        <label>বকেয়া: <input type="number" name="due" required></label><br>
+        <label><input type="checkbox" name="paid_full"> সম্পূর্ণ পরিশোধ হয়েছে</label><br>
+        <button type="submit">সাবমিট</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

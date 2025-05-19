@@ -4,7 +4,7 @@ document.getElementById("shopForm").addEventListener("submit", function(e) {
     const formData = new FormData(this);
     const data = {};
     formData.forEach((value, key) => { data[key] = value });
-    fetch("https://script.google.com/macros/s/AKfycbxAgnfbOwbYbWP5c7tKwscE-D-ZHpBRlas1S_reqz4GOWqJBWQ3sJrACSKU59kqLxg5/exec", {
+    fetch("https://mepinfo.netlify.app", {
         method: "POST",
         body: JSON.stringify(data)
     })
